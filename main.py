@@ -8,7 +8,6 @@ import asyncio
 import random
 
 # main
-TOKEN = 'NTEyNDU0MDY5ODA2MzAxMTg0.Dy0LDA.0nKfqjiEYarMbTutndzVstM1TjM'
 version = 1.0
 client = Bot(
 	command_prefix = '.',
@@ -111,4 +110,4 @@ async def tpe():
 	await client.say(embed=embed)
 
 
-client.run(TOKEN)
+client.run(str(os.environ.get('BOT_TOKEN')))
