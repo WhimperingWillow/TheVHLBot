@@ -4,8 +4,12 @@
 # libraries
 import discord
 from discord.ext import commands
+from discord.ext.commands import Bot
 import asyncio
 import random
+import os
+import requests
+
 
 # main
 version = 1.0
